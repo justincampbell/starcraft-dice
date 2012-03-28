@@ -1,5 +1,8 @@
 source :rubygems
 
-gem 'heroku'
 gem 'sinatra'
+
+group :development, :test do
+  gem 'heroku'
+end
 
