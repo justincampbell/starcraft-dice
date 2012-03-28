@@ -1,4 +1,5 @@
 get '/' do
-  %w[Terran Zerg Protoss].sample
+  @race = %w[Terran Zerg Protoss].sample
+  slim 'h2= @race'
 end
 
